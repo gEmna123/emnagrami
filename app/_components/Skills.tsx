@@ -11,7 +11,7 @@ export const Skills = () => {
         <Section className="flex flex-col items-start gap-4">
             <Badge variant={"outline"} className="text-lg text-muted-foreground">Mes Compétences</Badge>
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-                Quesque je sais faire ?
+            Quelles sont mes compétences?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center gap-4 p-4 border rounded-lg shadow-md">

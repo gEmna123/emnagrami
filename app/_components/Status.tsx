@@ -9,49 +9,49 @@ import { ContactCard } from "./ContactCard"; // Ensure the path is correct
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Search,
-        title: "système d'indexation et de recherche de documents textuels",
+        title: "Système d'indexation et de recherche de documents textuels",
         description: "technologies : python",
         url: "https://github.com/gEmna123/Mini_Projet_Indexation"
     },
     {
         Logo: Hospital,
-        title: "rapport du site de gestion de clinique médicale zl orthodentics",
+        title: "Rapport du site de gestion de clinique médicale zl orthodentics",
         description: "technologies : erp, odoo, bpmn",
         url: "https://github.com/gEmna123/Rapport-du-Site-de-gestion-de-clinique-m-dicale-ZL-Orthodentics"
     },
     {
         Logo: Grid3X3,
-        title: "jeu de taquin",
+        title: "Jeu de taquin",
         description: "technologies : python",
         url: "https://github.com/gEmna123/jeuTaquin"
     },
     {
         Logo: Car,
-        title: "site web de location de voitures",
+        title: "Site web de location de voitures",
         description: "technologies : html5, css3, php,mysql, uml",
         url: "https://github.com/gEmna123/projet_web_location_voiture"
     },
     {
         Logo: Weight,
-        title: "programme java pour la gestion d’une boutique en ligne",
+        title: "Programme java pour la gestion d’une boutique en ligne",
         description: "technologies : java",
         url: "https://github.com/gEmna123/Projet_Gestion_Commercial"
     },
     {
         Logo: ALargeSmall,
-        title: "logiciel ocr",
+        title: "Logiciel ocr",
         description: "technologies : python",
         url: "https://github.com/gEmna123/projetOCR"
     },
     {
         Logo: Gamepad,
-        title: "jeu vidéo emna the monster",
+        title: "Jeu vidéo emna the monster",
         description: "technologies : python",
         url: "https://github.com/codespaces/new/gEmna123/Game_Emna_The_Monster?auto_init=1&resume=1"
     },
     {
         Logo: Sprout,
-        title: "conception et développement d'une page web pour une pépinière",
+        title: "Conception et développement d'une page web pour une pépinière",
         description: "technologies : PHP, HTML, CSS, JavaScript",
         url: "https://github.com/codespaces/new/gEmna123/Game_Emna_The_Monster?auto_init=1&resume=1"
     }
