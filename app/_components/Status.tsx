@@ -1,73 +1,61 @@
-import { Section } from "./Section";
+import { Section } from "./Section"; // Assurez-vous que le chemin est correct
 import { Card } from "@/components/ui/card";
-import { Code, StickyNote, Rss, MessageCircle, Weight, ALargeSmall } from "lucide-react";
+import { Weight, ALargeSmall, Search, Hospital, Grid3X3, Car, Gamepad, Sprout } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { ContactCard } from "./ContactCard";
+import { SideProjectProps } from "./SideProject";
+import { ContactCard } from "./ContactCard"; // Ensure the path is correct
 
-const SIDE_PROJECTS = [
+const SIDE_PROJECTS: SideProjectProps[] = [
     {
-        Logo: Code,
-        title: "CodeLine",
-        description: "Portfolio personnel",
-        url: "/"
+        Logo: Search,
+        title: "système d'indexation et de recherche de documents textuels",
+        description: "technologies : python",
+        url: "https://github.com/gEmna123/Mini_Projet_Indexation"
     },
     {
-        Logo: StickyNote,
-        title: "PowerNote",
-        description: "lorem ipsum",
-        url: "/"
+        Logo: Hospital,
+        title: "rapport du site de gestion de clinique médicale zl orthodentics",
+        description: "technologies : erp, odoo, bpmn",
+        url: "https://github.com/gEmna123/Rapport-du-Site-de-gestion-de-clinique-m-dicale-ZL-Orthodentics"
     },
     {
-        Logo: Rss,
-        title: "PowerPost",
-        description: "Portfolio personnel",
-        url: "/"
+        Logo: Grid3X3,
+        title: "jeu de taquin",
+        description: "technologies : python",
+        url: "https://github.com/gEmna123/jeuTaquin"
     },
     {
-        Logo: MessageCircle,
-        title: "chat2Code",
-        description: "Portfolio personnel",
-        url: "/"
+        Logo: Car,
+        title: "site web de location de voitures",
+        description: "technologies : html5, css3, php,mysql, uml",
+        url: "https://github.com/gEmna123/projet_web_location_voiture"
     },
     {
         Logo: Weight,
-        title: "LinkedLeads",
-        description: "Portfolio personnel",
-        url: "/"
+        title: "programme java pour la gestion d’une boutique en ligne",
+        description: "technologies : java",
+        url: "https://github.com/gEmna123/Projet_Gestion_Commercial"
     },
     {
         Logo: ALargeSmall,
-        title: "BullCorrector",
-        description: "Portfolio personnel",
-        url: "/"
+        title: "logiciel ocr",
+        description: "technologies : python",
+        url: "https://github.com/gEmna123/projetOCR"
+    },
+    {
+        Logo: Gamepad,
+        title: "jeu vidéo emna the monster",
+        description: "technologies : python",
+        url: "https://github.com/codespaces/new/gEmna123/Game_Emna_The_Monster?auto_init=1&resume=1"
+    },
+    {
+        Logo: Sprout,
+        title: "conception et développement d'une page web pour une pépinière",
+        description: "technologies : PHP, HTML, CSS, JavaScript",
+        url: "https://github.com/codespaces/new/gEmna123/Game_Emna_The_Monster?auto_init=1&resume=1"
     }
 ];
-
-type WorkProps = {
-    image: string;
-    title: string;
-    role: string;
-    date: string;
-    url: string;
-};
-
-const Work = (props: WorkProps) => {
-    return (
-        <Link href={props.url} className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-            <Image src={props.image} alt={props.title} width={40} height={40} className="w-10 h-10 object-contain rounded-md" />
-            <div className="mr-auto">
-                <div className="flex items-center gap-2">
-                    <p className="text-lg font-semibold">{props.title}</p>
-                </div>
-                <p className="text-xs text-muted-foreground">{props.role}</p>
-            </div>
-            <div className="">
-                <p className="text-xs text-end text-muted-foreground">{props.date}</p>
-            </div>
-        </Link>
-    );
-};
 
 export const Status = () => {
     return (
@@ -93,7 +81,10 @@ export const Status = () => {
                     <p className="text-lg text-muted-foreground">Mes Stages</p>
                     <div className="flex flex-col gap-4">
                         {WORKS.map((work, index) => (
-                            <Work key={index} {...work} />
+                            <Work
+                                key={index}
+                                {...work}
+                            />
                         ))}
                     </div>
                 </Card>
@@ -137,3 +128,28 @@ const WORKS: WorkProps[] = [{
     url: "https://www.beecoders.tn/index.html"
 }
 ];
+type WorkProps = {
+    image: string;
+    title: string;
+    role: string;
+    date: string;
+    url: string;
+
+};
+
+const Work = (props: WorkProps) => {
+    return (
+        <Link href={props.url} className="flex items-center gap-4 p-4 border rounded-lg shadow-md">
+            <Image src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md" width={40} height={40} />
+            <div className="mr-auto">
+                <div className="flex items-center gap-2">
+                    <p className="text-lg font-semibold">{props.title}</p>
+                </div>
+                <p className="text-xs text-muted-foreground">{props.role}</p>
+            </div>
+            <div className="">
+                <p className="text-xs text-end text-muted-foreground">{props.date}</p>
+            </div>
+        </Link>
+    );
+};
