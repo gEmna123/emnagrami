@@ -1,4 +1,3 @@
-import path from "path";
 import { ComponentPropsWithoutRef } from "react";
 
 export const WebIcon = (props: ComponentPropsWithoutRef<"svg"> & { size?: number }) => {
