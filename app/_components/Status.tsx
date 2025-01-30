@@ -1,8 +1,8 @@
 import { Section } from "./Section"; // Assurez-vous que le chemin est correct
 import { Card } from "@/components/ui/card";
-import { Code, StickyNote, Rss, MessageCircle, Weight, ALargeSmall, Search, Hospital, Grid3X3, Car, Gamepad, PlaneTakeoff, Sprout } from "lucide-react";
+import { Weight, ALargeSmall, Search, Hospital, Grid3X3, Car, Gamepad, Sprout } from "lucide-react";
 import Link from "next/link";
-import { SideProjectProps, SideProject } from "./SideProject";
+import { SideProjectProps } from "./SideProject";
 import { ContactCard } from "./ContactCard"; // Ensure the path is correct
 
 const SIDE_PROJECTS: SideProjectProps[] = [

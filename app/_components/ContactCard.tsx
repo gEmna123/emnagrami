@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { ArrowUpRight } from "lucide-react";
 
 export const ContactCard = (props: {

@@ -1,4 +1,4 @@
-import { Component, ComponentPropsWithoutRef } from "react";
+import {  ComponentPropsWithoutRef } from "react";
 
 // filepath: /home/grami/mes_Montage/portfolio-emna/portfolio-emna/components/icons/OSIcon.tsx
 export const OSIcon = (props: ComponentPropsWithoutRef<"svg"> & { size?: number }) => {

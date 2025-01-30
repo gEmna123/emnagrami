@@ -7,7 +7,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Contact = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
-      <Badge variant={"outline"}>Me contacter</Badge>
+      <Badge variant={"outline"} className="text-lg text-muted-foreground">Me contacter</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         Je voudrais bien travailler avec vous !
       </h2>

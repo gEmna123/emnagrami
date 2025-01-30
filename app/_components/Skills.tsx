@@ -9,7 +9,7 @@ import { WebIcon } from "@/components/icons/WebIcon";
 export const Skills = () => {
     return (
         <Section className="flex flex-col items-start gap-4">
-            <Badge variant={"outline"}>Mes Compétences</Badge>
+            <Badge variant={"outline"} className="text-lg text-muted-foreground">Mes Compétences</Badge>
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                 Quesque je sais faire ?
             </h2>
@@ -34,7 +34,7 @@ export const Skills = () => {
 
                 <div className="flex flex-col items-center gap-4 p-4 border rounded-lg shadow-md">
                     <OSIcon size={42} />
-                    <h3 className="text-2xl font-semibold tracking-tight">Systèmes d'exploitation</h3>
+                    <h3 className="text-2xl font-semibold tracking-tight">Systèmes d&apos;exploitation</h3>
                     <p className="text-sm text-muted-foreground text-center">Windows, Linux</p>
                 </div>
 
