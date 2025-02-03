@@ -32,19 +32,25 @@ const Contact = () => {
 
                 {/* Email */}
                 <div className="flex items-center gap-4 p-4 border rounded-lg shadow-md">
+
                     <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 text-primary" />
-                    <div>
-                        <h3 className="text-xl font-semibold">Email</h3>
-                        <p className="text-sm text-muted-foreground">gemna30@gmail.com</p>
-                    </div>
+                    <a href="mailto:gemna30@gmail.com" className="text-sm text-muted-foreground">
+                        <div>
+                            <h3 className="text-xl font-semibold">Email</h3>
+                            gemna30@gmail.com
+
+
+                        </div>
+                    </a>
                 </div>
 
                 {/* LinkedIn */}
                 <div className="flex items-center gap-4 p-4 border rounded-lg shadow-md">
                     <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6 text-primary" />
                     <div>
+                    <a href="https://www.linkedin.com/in/emna-grami-454a182b2/" className="text-sm text-muted-foreground">
                         <h3 className="text-xl font-semibold">LinkedIn</h3>
-                        <p className="text-sm text-muted-foreground">linkedin.com/in/emna-grami</p>
+                        linkedin.com/in/emna-grami</a>
                     </div>
                 </div>
             </div>

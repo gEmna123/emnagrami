@@ -11,9 +11,17 @@ export const Hero = () => {
                 <p className="text-justify">✨ J&apos;aime résoudre des problèmes techniques, optimiser le code et apprendre en continu pour proposer des solutions modernes et efficaces.</p>
             </div>
             <div className="flex-[2] max-md:m-auto ml-auto">
-                <Image src="https://avatars.githubusercontent.com/u/140692808?v=4" 
-                width={200} height={200} className="w-full h-auto max-w-xs rounded-full max-md:w-56" alt="Emna's picture" />
+                <Image
+                    src="/image.jpg"
+                    width={400}  // Augmenter la taille
+                    height={400}
+                    className="w-full h-auto max-w-xs rounded-full max-md:w-56"
+                    alt="Emna's picture"
+                    quality={100} // Améliore la qualité
+                />
+
             </div>
         </Section>
+        // https://avatars.githubusercontent.com/u/140692808?v=4
     );
 }
