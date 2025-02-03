@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <section id="header">
-      <Header />
+        <Header />
       </section>
       <Spacing size="md" />
       <Hero />
@@ -20,10 +20,6 @@ export default function Home() {
       </section>
       <Spacing size="md" />
       <section id="projects">
-        <Skills />
-      </section>
-      <Spacing size="md" />
-      <section id="skills">
         <Skills />
       </section>
       <Spacing size="md" />
