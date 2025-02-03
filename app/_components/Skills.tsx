@@ -34,7 +34,7 @@ export const Skills = () => {
 
                 <div className="flex flex-col items-center gap-4 p-4 border rounded-lg shadow-md">
                     <OSIcon size={42} className="animate-spin" style={{ animationDuration: "10s" }} />
-                    <h3 className="text-2xl font-semibold tracking-tight text-center">Systèmes d'exploitation</h3>
+                    <h3 className="text-2xl font-semibold tracking-tight text-center">Systèmes d&apos;exploitation</h3>
                     <p className="text-sm text-muted-foreground text-center">Windows, Linux, MacOS</p>
                 </div>
 
