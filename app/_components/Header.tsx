@@ -1,51 +1,42 @@
-"use client";
-
-import { useState, useEffect, useRef } from "react";
-import { buttonVariants } from "@/components/ui/button";
-import { Section } from "./Section";
-import { GithubIcon } from "@/components/icons/GithubIcon";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
+import {  buttonVariants } from "@/components/ui/button"
+import { Section } from "./Section"
+import { GithubIcon } from "@/components/icons/GithubIcon"
+import { cn } from "@/lib/utils"
+import Link from "next/link"
+import { LinkedInIcon } from "@/components/icons/LinkedInIcon"
 
 export const Header = () => {
-    const [hidden, setHidden] = useState(false);
-    const lastScrollY = useRef(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > lastScrollY.current) {
-                setHidden(true);
-            } else {
-                setHidden(false);
-            }
-            lastScrollY.current = window.scrollY;
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     return (
-        <header className={cn(
-            "fixed top-0 left-0 w-full transition-transform duration-300 ease-in-out",
-            hidden ? "-translate-y-full" : "translate-y-0"
-        )}>
-            <Section className="flex items-center justify-between p-4 bg-gray-800 shadow-md">
-                <Link href="/" className="text-xl font-bold text-white">
+        <header className="sticky top-0 py-4">
+            <Section className="flex items-baseline">
+                <h1 className="text-lg font-bold text-white">
                     emnagrami.com
-                </Link>
-                <nav className="flex items-center space-x-4">
-                    <Link href="https://github.com" className={buttonVariants({ variant: "ghost" })}>
-                        <GithubIcon className="w-6 h-6 text-white" />
+                </h1>
+                <div className="flex-1" />
+                <ul className="flex item-center gap-2">
+                    <Link
+                        href="https://github.com/gEmna123"
+                        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+                    >
+                        <GithubIcon size={12} className="text-foreground" />
+
                     </Link>
-                    <Link href="https://linkedin.com" className={buttonVariants({ variant: "ghost" })}>
-                        <LinkedInIcon className="w-6 h-6 text-white" />
+                    <Link
+                        href="https://www.linkedin.com/in/emna-grami-454a182b2/"
+                        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+                    >
+                        <LinkedInIcon size={12} className="text-foreground" />
+
                     </Link>
-                </nav>
+                </ul>
+
             </Section>
         </header>
-    );
-};
+    )
+}
+
+
+
+
+
+

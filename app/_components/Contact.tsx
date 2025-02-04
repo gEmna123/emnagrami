@@ -11,7 +11,7 @@ const Contact = () => {
             <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                 Vous pouvez me joindre via
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                 {/* Adresse */}
                 <div className="flex items-center gap-4 p-4 border rounded-lg shadow-md">
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="w-6 h-6 text-primary" />

@@ -8,9 +8,9 @@ import { WebIcon } from "@/components/icons/WebIcon";
 
 export const Skills = () => {
     return (
-        <Section className="flex flex-col items-center gap-4">
+        <Section className="flex flex-col items-start gap-4">
             <Badge variant={"outline"} className="text-lg text-muted-foreground">Mes Compétences</Badge>
-            <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-center">
+            <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 ">
                 Quelles sont mes compétences?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
